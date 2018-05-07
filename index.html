@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Kaлькулятор1</h1>
+    </header>
+    <section>
+        <p>Число1: <input type="text" id="n1"></p>
+        <p>Число2: <input type="text" id="n2"></p>
+        <button onclick="plus()">Додати</button>
+        <button onclick="minus()">Відняти</button>
+        <hr>
+        <p id="out">Результат:</p>
+        <script src="/js/index.js"></script>
+    </section>
+    <section>
+        <h2>Калькулятор2</h2>
+        <div id="calc-wrap">
+            <div id="calc">
+                <textarea id="inputVal"></textarea>
+            </div>
+        </div>
+        <script src="/js/calculator.js"></script>
+    </section>
+    <section>
+        <h3>Калькулятор3</h3>
+        <table border="2">
+            <tr>
+                <td>
+                    <input id="znah_1" size="38">
+                </td>
+                <td rowspan="3" valign="top">
+                    <input type="button" value=" + " onclick="plus()">
+                    <input type="button" value=" - " onclick="minus()">
+                    <input type="button" value=" * " onclick="umn()">
+                    <input type="button" value=" / " onclick="del()"></td>
+            </tr>
+            <tr>
+                <td><input id="znah_2" size="38"></td>
+            </tr>
+            <tr>
+                <td><input id="rezultat" size="38"></td>
+            </tr>
+        </table>
+        <script src="/js/calc3.js"></script>
+    </section>
+</body>
+</html>
